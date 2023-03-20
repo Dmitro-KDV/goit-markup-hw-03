@@ -17,6 +17,7 @@ body {
 }
 .section-title {
     margin-bottom: 72px;
+    margin-top: 0; 
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -44,10 +45,19 @@ body {
     width: 1158px; 
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
-.page-header  { 
-    padding: 24px 156px;
+.properties {
+    width: 1440px;
+}
+.page-header {
     border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header .container { 
+    padding-top: 24px;
+    padding-bottom: 24px;
+    /* border-bottom: 1px solid #E7E9FC; */
     display: flex;
     justify-content: space-between;
 }
@@ -176,20 +186,20 @@ body {
     overflow: hidden;
 }
 .section {
-    /* padding-top: 120px;
-    padding-bottom: 0; */
-    margin: 0 auto;
+    margin: 120px auto;
 }
 .section .feature,
 .section .profile,
-.section .specialist
+.section .specialist-group
 {
     display: flex;
     gap: 24px;
     padding-left: 0;
+    margin: 0;
 }
 .section.specialist {
     margin-top: 120px;
+    padding-top: 120px;
     background: var(--logo-color-foot);
 }
 .specialist {
@@ -206,6 +216,8 @@ body {
 }
 .footer {
     background: var(--logo-color);
+    display: flex;
+    flex-direction: column;
     width: 264px;
     padding: 100px 1020px 100px 156px;
 }
@@ -218,7 +230,8 @@ body {
 }
 
 .section-goods {
-    padding: 96px 156px 120px;
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .menu-nav .link-btn {
     font-family: "Roboto", sans-serif;

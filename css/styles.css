@@ -14,6 +14,7 @@ body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: var(--text-list);
+    width: 1440px;
 }
 .section-title {
     margin-bottom: 72px;
@@ -48,7 +49,7 @@ body {
     margin: 0 auto;
 }
 .properties {
-    width: 1440px;
+    /* width: 1440px; */
 }
 .page-header {
     border-bottom: 1px solid #E7E9FC;
@@ -132,19 +133,27 @@ body {
     color: var(--fishnet-text-color);
 }
 .hero {
-    display: flex;
-    flex-direction: column;
-    width: 496px;
-    padding: 188px 472px;
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
       url(../images/people-office.jpg);
 }
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    /* width: 496px; */
+    /* padding: 188px 472px; */
+    /* background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg); */
+}
 .hero-title {
     color: var(--text-color);
-    margin-top: 0;
-    margin-bottom: 48px;
+    width: 496px;
+    margin: 188px auto 0;
+    /* margin-top: 0;
+    margin-bottom: 48px; */
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -156,8 +165,8 @@ body {
     background: var(--button-color);
     /* margin-left: 164px; */
     width: 169px;
-    margin: auto;
-    padding: 16px 32px;
+    margin: 48px auto 188px;
+    padding: 16px;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
@@ -216,10 +225,14 @@ body {
 }
 .footer {
     background: var(--logo-color);
+}
+.footer .container {
     display: flex;
     flex-direction: column;
     width: 264px;
-    padding: 100px 1020px 100px 156px;
+    padding: 100px 0;
+    margin: 0;
+    margin-left: 156px;
 }
 .footer .logo-span {
     color: var(--logo-color-foot);
@@ -230,8 +243,9 @@ body {
 }
 
 .section-goods {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding: 96px 0 120px;
+    /* padding-top: 96px;
+    padding-bottom: 120px; */
 }
 .menu-nav .link-btn {
     font-family: "Roboto", sans-serif;
@@ -253,7 +267,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    width: 586px;
+    /* width: 586px; */
     margin: 0 auto 72px;
     padding: 0;
 }

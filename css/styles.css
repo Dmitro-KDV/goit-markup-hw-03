@@ -30,11 +30,13 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: var(--logo-color);
+    margin: 32px 16px 8px;
 }
 .text {
     font-size: 16px;
     line-height: 1.5;
     color: var(--text-list); 
+    margin: 0 16px 32px;
 }
 .link {
     text-decoration: none;
@@ -48,9 +50,6 @@ body {
     padding-right: 15px;
     margin: 0 auto;
 }
-.properties {
-    /* width: 1440px; */
-}
 .page-header {
     border-bottom: 1px solid #E7E9FC;
 }
@@ -58,7 +57,6 @@ body {
 .page-header .container { 
     padding-top: 24px;
     padding-bottom: 24px;
-    /* border-bottom: 1px solid #E7E9FC; */
     display: flex;
     justify-content: space-between;
 }
@@ -141,19 +139,12 @@ body {
 .hero .container{
     display: flex;
     flex-direction: column;
-    /* width: 496px; */
-    /* padding: 188px 472px; */
-    /* background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-      url(../images/people-office.jpg); */
+    margin-bottom: 120px;
 }
 .hero-title {
     color: var(--text-color);
     width: 496px;
     margin: 188px auto 0;
-    /* margin-top: 0;
-    margin-bottom: 48px; */
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -163,7 +154,6 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
     background: var(--button-color);
-    /* margin-left: 164px; */
     width: 169px;
     margin: 48px auto 188px;
     padding: 16px;
@@ -195,7 +185,7 @@ body {
     overflow: hidden;
 }
 .section {
-    margin: 120px auto;
+    margin-bottom: 120px;
 }
 .section .feature,
 .section .profile,
@@ -207,13 +197,10 @@ body {
     margin: 0;
 }
 .section.specialist {
-    margin-top: 120px;
     padding-top: 120px;
+    margin-left: 0;
+    margin-right: 0;
     background: var(--logo-color-foot);
-}
-.specialist {
-    text-align: center;
-    background-color: var(--text-color);
 }
 .specialist .specialist-list {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -240,12 +227,12 @@ body {
 }
 .adress-profession {
     color: var(--logo-color-foot); 
+    margin: 0;
 }
 
 .section-goods {
-    padding: 96px 0 120px;
-    /* padding-top: 96px;
-    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .menu-nav .link-btn {
     font-family: "Roboto", sans-serif;
@@ -265,9 +252,7 @@ body {
 .menu-nav {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 24px;
-    /* width: 586px; */
     margin: 0 auto 72px;
     padding: 0;
 }
@@ -280,9 +265,14 @@ body {
 .section-goods .goods {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    margin: auto;
+    gap: 48px;
+    margin: 0;
     padding: 0;
+}
+.goods-gap {
+    display: flex;
+    justify-content: space-between ;
+    gap: 24px; 
 }
 .goods .goods-list {
     background: var(--text-color);

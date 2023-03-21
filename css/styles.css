@@ -135,16 +135,17 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
       url(../images/people-office.jpg);
+      padding: 188px 0;
 }
 .hero .container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
+    gap: 48px;
 }
 .hero-title {
     color: var(--text-color);
     width: 496px;
-    margin: 188px auto 0;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -155,7 +156,7 @@ body {
     color: var(--text-color);
     background: var(--button-color);
     width: 169px;
-    margin: 48px auto 188px;
+    margin: 0 auto;
     padding: 16px;
     cursor: pointer;
     font-weight: 500;
@@ -185,10 +186,10 @@ body {
     overflow: hidden;
 }
 .section {
-    margin-bottom: 120px;
+    padding-top: 120px;
 }
 .section .feature,
-.section .profile,
+.section .profile-group,
 .section .specialist-group
 {
     display: flex;
@@ -196,10 +197,16 @@ body {
     padding-left: 0;
     margin: 0;
 }
+.section.profile {
+    padding-bottom: 120px; 
+}
+.feature-title,
+.feature-explanation {
+    margin: 0;
+}
 .section.specialist {
-    padding-top: 120px;
-    margin-left: 0;
-    margin-right: 0;
+    padding-bottom: 120px;
+    margin: 0;
     background: var(--logo-color-foot);
 }
 .specialist .specialist-list {
@@ -271,8 +278,7 @@ body {
 }
 .goods-gap {
     display: flex;
-    justify-content: space-between ;
-    gap: 24px; 
+    gap: 24px;
 }
 .goods .goods-list {
     background: var(--text-color);
